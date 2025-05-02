@@ -1,6 +1,8 @@
 ---
 import { siteConfig } from "../../../site.config";
 
+const { pathname } = Astro.url;
+
 const menuPages = [
   { name: "Articles", href: "/articles" },
   { name: "Notes", href: "/notes" },
@@ -26,7 +28,7 @@ const menuPages = [
       menuPages.map((page) => (
         <a
           href={page.href}
-          class=""
+          class={pathname === page.href ? "italic" : ""}
         >
           {page.name}
         </a>
