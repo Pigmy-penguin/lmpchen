@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Thumbnail from "./layout/Thumbnail.astro";
+import type { PostType } from "../../types";
+
+interface Props {
+  posts: Array<PostType>;
+}
+const { posts } = Astro.props;
+---
+
+<Layout>
+  <section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
+    {posts.map((post) => <Thumbnail post={post} />)}
+  </section>
+</Layout>

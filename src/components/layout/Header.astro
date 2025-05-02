@@ -2,21 +2,35 @@
 import { siteConfig } from "../../../site.config";
 
 const menuPages = [
-    { name: "Articles", href: "/articles" },
-    { name: "À propos", href: "/about" }
-]
+  { name: "Articles", href: "/articles" },
+  { name: "Notes", href: "/notes" },
+  { name: "Traductions", href: "/translations" },
+  { name: "À propos", href: "/about" }
+];
 ---
 
-<header class="flex flex-col md:flex-row justify-between md:items-center w-full">
-    <a href="/" class="font-display p-4 text-3xl -rotate-4 origin-bottom-left">
-        {siteConfig.title}
-    </a>
+<header
+  class="flex flex-col md:flex-row justify-between md:items-center w-full"
+>
+  <a
+    href="/"
+    class="font-display p-4 text-3xl -rotate-4 origin-bottom-left"
+  >
+    {siteConfig.title}
+  </a>
 
-    <nav class="flex md:justify-end items-center gap-6 max-md:border-t border-black p-4">
-        {menuPages.map((page) => (
-            <a href={page.href} class="">
-                {page.name}
-            </a>
-        ))}
-    </nav>
+  <nav
+    class="flex md:justify-end items-center gap-6 max-md:border-t border-black p-4"
+  >
+    {
+      menuPages.map((page) => (
+        <a
+          href={page.href}
+          class=""
+        >
+          {page.name}
+        </a>
+      ))
+    }
+  </nav>
 </header>

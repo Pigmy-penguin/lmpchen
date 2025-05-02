@@ -1,6 +1,5 @@
 ---
-import Thumbnail from "../components/layout/Thumbnail.astro";
-import Layout from "../layouts/Layout.astro";
+import PostGrid from "../components/PostGrid.astro";
 import { getCollection } from "astro:content";
 
 // Import the collections
@@ -13,8 +12,4 @@ const allPosts = [...articles, ...notes, ...translations].sort(
 );
 ---
 
-<Layout>
-  <section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
-    {allPosts.map((post) => <Thumbnail post={post} />)}
-  </section>
-</Layout>
+<PostGrid posts={allPosts} />

@@ -1,0 +1,8 @@
+---
+import { getCollection } from "astro:content";
+import PostGrid from "../../components/PostGrid.astro";
+
+const notes = await getCollection("notes");
+---
+
+<PostGrid posts={notes} />
