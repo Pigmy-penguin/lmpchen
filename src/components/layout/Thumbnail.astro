@@ -16,16 +16,16 @@ const { article } = Astro.props;
 ---
 
 <div
-  class="flex pt-4 flex-col gap-14 p-4 text-secondary bg-[var(--item-color)]"
+  class="flex pt-4 flex-col gap-14 p-4 text-secondary bg-[var(--item-color)] justify-between"
   style={`--item-color: ${article.data.color || "#000"};`}
 >
   <div class="flex flex-col">
-    <h2 class="text-2xl font-sc text-balance leading-6">
+    <h2 class="text-xl md:text-2xl font-sc text-balance leading-6">
       <a href={article.id}>
         {article.data.title}
       </a>
     </h2>
-    <p class="font-light">
+    <p class="text-sm tracking-wide font-light">
       {
         article.data.published.toLocaleDateString("fr-FR", {
           year: "numeric",
@@ -35,20 +35,21 @@ const { article } = Astro.props;
       }
     </p>
   </div>
-  <div class="flex flex-row gap-2">
+  <div class="flex flex-row gap-2 items-start md:items-end">
     {
       article.data.image && (
         <img
           src={article.data.image}
           alt={article.data.title}
-          class="aspect-square mix-blend-lighten"
+          class="aspect-square w-18 md:w-32 mix-blend-lighten object-cover"
         />
       )
     }
 
     <div class="relative">
       <p class="text-balance leading-4.5 max-w-prose">
-        {article.data.description}
+        {article.data.description.slice(0, 300)}
+        {article.data.description.length > 300 ? "…" : ""}
       </p>
       <div
         class="absolute inset-0 bg-gradient-to-tl from-[var(--item-color)]/70"

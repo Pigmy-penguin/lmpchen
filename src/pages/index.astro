@@ -1,15 +1,20 @@
 ---
-import Thumbnail from '../components/layout/Thumbnail.astro';
-import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
-const articles = (await getCollection('articles'))
-    .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+import Thumbnail from "../components/layout/Thumbnail.astro";
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+// Import the collections
+const articles = await getCollection("articles");
+const notes = await getCollection("notes");
+const translations = await getCollection("translations");
+
+const allPosts = [...articles, ...notes, ...translations].sort(
+  (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
+);
 ---
 
 <Layout>
-    <section class="flex flex-col">
-        {articles.map((article) => (
-            <Thumbnail article={article} />
-        ))}
-    </section>
+  <section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
+    {allPosts.map((article) => <Thumbnail article={article} />)}
+  </section>
 </Layout>
