@@ -15,6 +15,6 @@ const allPosts = [...articles, ...notes, ...translations].sort(
 
 <Layout>
   <section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
-    {allPosts.map((article) => <Thumbnail article={article} />)}
+    {allPosts.map((post) => <Thumbnail post={post} />)}
   </section>
 </Layout>

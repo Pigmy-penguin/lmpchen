@@ -8,7 +8,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: siteConfig.url,
   base: "/",
-  trailingSlash: "always",
 
   devToolbar: {
     enabled: false
@@ -16,5 +15,11 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()]
+  },
+
+  markdown: {
+    remarkRehype: {
+      footnoteLabel: "Notes"
+    }
   }
 });
