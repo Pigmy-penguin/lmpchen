@@ -2,6 +2,7 @@
 import { siteConfig } from "../../site.config";
 
 const { pathname } = Astro.url;
+console.log(pathname);
 
 const menuPages = [
   { name: "Articles", href: "/articles" },
@@ -28,7 +29,11 @@ const menuPages = [
       menuPages.map((page) => (
         <a
           href={page.href}
-          class={pathname === page.href ? "italic" : ""}
+          class={
+            pathname === page.href || pathname === page.href + "/"
+              ? "italic"
+              : ""
+          }
         >
           {page.name}
         </a>
