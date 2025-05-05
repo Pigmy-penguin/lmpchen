@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import type { PostType } from "../../types";
 
 interface Props {
@@ -6,6 +7,14 @@ interface Props {
 }
 
 const { post } = Astro.props;
+
+// Import thumbnail image metadata
+const thumbnails = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/content/thumbnails/*.{jpg,jpeg,png,gif,webp,avif}"
+);
+const thumbnailPath = "/src/content/thumbnails/" + post.data.image;
+if (post.data.image && !thumbnails[thumbnailPath])
+  throw new Error(`Image ${thumbnailPath} not found in thumbnails folder`);
 ---
 
 <a
@@ -35,8 +44,8 @@ const { post } = Astro.props;
   <div class="flex flex-row gap-2 items-start md:items-end">
     {
       post.data.image && (
-        <img
-          src={post.data.image}
+        <Image
+          src={thumbnails[thumbnailPath]()}
           alt={post.data.title}
           class="aspect-square w-18 md:w-32 mix-blend-lighten object-cover pt-0.5"
         />

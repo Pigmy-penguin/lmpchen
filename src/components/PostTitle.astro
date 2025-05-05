@@ -1,11 +1,21 @@
 ---
+import { Image } from "astro:assets";
 import type { PostType } from "../../types";
+import type { ImageMetadata } from "astro";
 
 interface Props {
   post: PostType;
 }
 
 const { post } = Astro.props;
+
+// Import thumbnail image metadata
+const thumbnails = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/content/thumbnails/*.{jpg,jpeg,png,gif,webp,avif}"
+);
+const thumbnailPath = "/src/content/thumbnails/" + post.data.image;
+if (post.data.image && !thumbnails[thumbnailPath])
+  throw new Error(`Image ${thumbnailPath} not found in thumbnails folder`);
 ---
 
 <div
@@ -29,7 +39,9 @@ const { post } = Astro.props;
     >
       {post.data.title}
     </h1>
-    <p class="!my-0 font-medium md:text-lg border-t border-secondary px-3 py-1">
+    <p
+      class="!my-0 font-medium text-sm md:text-lg border-t border-secondary px-3 py-1"
+    >
       {
         post.data.published.toLocaleDateString("fr-FR", {
           year: "numeric",
@@ -43,8 +55,8 @@ const { post } = Astro.props;
   <!-- Image -->
   {
     post.data.image && (
-      <img
-        src={post.data.image}
+      <Image
+        src={thumbnails[thumbnailPath]()}
         alt={post.data.title}
         class="w-full aspect-video object-cover mix-blend-multiply !my-0"
       />
