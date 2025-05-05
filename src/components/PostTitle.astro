@@ -1,0 +1,53 @@
+---
+import type { PostType } from "../../types";
+
+interface Props {
+  post: PostType;
+}
+
+const { post } = Astro.props;
+---
+
+<div
+  class="relative max-md:-mx-4"
+  style={`
+    --item-color: ${post.data.color ?? (post.data.image ? "var(--color-secondary)" : "var(--color-primary)")}; 
+    `}
+>
+  <!-- Gradient -->
+  <div
+    class={`${post.data.image ? "absolute inset-0" : "w-full aspect-video"} bg-gradient-to-t from-primary to-(--item-color) ${post.data.title.length > 40 ? "to-90% md:to-70%" : "to-50% md:to-30%"}`}
+  >
+  </div>
+
+  <!-- Overlay -->
+  <div
+    class="absolute bottom-0 left-0 [&_*]:text-secondary z-10 flex w-full flex-col"
+  >
+    <h1
+      class={`!my-0 text-xl/[1.125] md:!text-2xl/tight !font-serif !font-semibold px-3 py-2`}
+    >
+      {post.data.title}
+    </h1>
+    <p class="!my-0 font-medium md:text-lg border-t border-secondary px-3 py-1">
+      {
+        post.data.published.toLocaleDateString("fr-FR", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        })
+      }
+    </p>
+  </div>
+
+  <!-- Image -->
+  {
+    post.data.image && (
+      <img
+        src={post.data.image}
+        alt={post.data.title}
+        class="w-full aspect-video object-cover mix-blend-multiply !my-0"
+      />
+    )
+  }
+</div>
