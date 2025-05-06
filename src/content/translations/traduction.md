@@ -4,6 +4,9 @@ description: "Plain Text is a printed publication for exploratory type design, e
 published: "2025-01-15"
 color: "#7300F9"
 image: "plain-text.jpeg"
+tags:
+  - Revue
+  - Typographie
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

@@ -6,6 +6,7 @@ export type PostType = {
     published: Date;
     color?: string;
     image?: string;
+    tags?: string[];
   };
   collection: string;
 };

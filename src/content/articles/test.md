@@ -4,6 +4,9 @@ description: "Here is a sample of some basic Markdown syntax that can be used wh
 published: "2025-04-30"
 color: "#753738"
 image: "image-1.png"
+tags: 
+  - Markdown
+  - Tutoriel
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

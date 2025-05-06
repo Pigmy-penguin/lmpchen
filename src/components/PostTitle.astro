@@ -49,6 +49,7 @@ if (post.data.image && !thumbnails[thumbnailPath])
           day: "2-digit"
         })
       }
+      {post.data.tags && <span>{" | " + post.data.tags.join(", ")}</span>}
     </p>
   </div>
 
