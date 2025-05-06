@@ -9,3 +9,9 @@
   --color-primary: #000000;
   --color-secondary: #eaeae7;
 }
+
+@layer base {
+  .prose a span {
+    @apply font-sans text-xs;
+  }
+}

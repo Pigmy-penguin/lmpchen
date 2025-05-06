@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 import { siteConfig } from "./site.config";
 
 import tailwindcss from "@tailwindcss/vite";
+import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,7 +20,18 @@ export default defineConfig({
 
   markdown: {
     remarkRehype: {
-      footnoteLabel: "Notes"
-    }
+      footnoteLabel: "Notes",
+      footnoteBackContent: "↑",
+      footnoteBackLabel: "Retour au contenu"
+    },
+    rehypePlugins: [
+      [
+        rehypeExternalLinks,
+        {
+          content: { type: "text", value: " ↗" },
+          target: "_blank"
+        }
+      ]
+    ]
   }
 });
