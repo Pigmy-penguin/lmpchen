@@ -24,6 +24,12 @@ import "@fontsource/freckle-face";
       name="generator"
       content={Astro.generator}
     />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Votre titre de site"
+      href={new URL("rss.xml", Astro.site)}
+    />
     <title>{siteConfig.title}</title>
   </head>
 
