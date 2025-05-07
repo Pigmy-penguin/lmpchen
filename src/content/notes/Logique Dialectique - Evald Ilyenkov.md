@@ -1,5 +1,5 @@
 ---
-title: "Le Logique Dialectique"
+title: "Logique Dialectique"
 description: "Dans cet ouvrage, Evald Ilyenkov retrace brièvement l'histoire de la dialectique, de la scolastique à Marx. Il traite également de nombreux problèmes théoriques relatifs à la théorie de la connaissance."
 published: "2025-05-07"
 color: "#A785A3"
