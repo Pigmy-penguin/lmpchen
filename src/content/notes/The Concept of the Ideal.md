@@ -1,5 +1,5 @@
 ---
-title: "Le concept de l'Idéal"
+title: "Sur le concept de l'idéel"
 description: "Evald Ilyenkov redéfinit l'idéal comme une forme sociale objectivée dans les pratiques humaines, s'opposant à l'idée qu'il ne serait qu'une projection mentale. Il s'appuie sur Marx pour montrer que l'idéalité réside dans les objets façonnés par l'activité collective."
 published: "2025-04-16"
 color: "#7BAF9E"
