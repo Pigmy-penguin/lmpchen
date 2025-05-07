@@ -1,0 +1,40 @@
+---
+import type { PostType } from "../../../types";
+import PostGrid from "../../components/PostGrid.astro";
+import getAllPosts from "../../utils/getAllPosts";
+
+export async function getStaticPaths() {
+  const allPosts = await getAllPosts();
+
+  const allPostsWithTags = allPosts.filter(
+    (post: any) => post.data.tags?.length > 0
+  );
+
+  const uniqueTags = [
+    ...new Set(allPostsWithTags.map((post: any) => post.data.tags).flat())
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter(
+      (post: any) => post.data.tags?.includes(tag) ?? false
+    );
+
+    return {
+      params: { tag },
+      props: { posts: filteredPosts }
+    };
+  });
+}
+
+interface Props {
+  posts: PostType[];
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<PostGrid
+  posts={posts}
+  tag={tag}
+/>

@@ -49,7 +49,19 @@ if (post.data.image && !thumbnails[thumbnailPath])
           day: "2-digit"
         })
       }
-      {post.data.tags && <span>{" | " + post.data.tags.join(", ")}</span>}
+      {
+        post.data.tags && (
+          <span class="[&_a]:no-underline [&_a]:hover:opacity-75 [&_a]:transition-opacity">
+            {" | "}{" "}
+            {post.data.tags
+              .map((t) => {
+                const h = `/tags/${t}`;
+                return <a href={h}>{t}</a>;
+              })
+              .reduce((prev, curr) => [prev, ", ", curr])}
+          </span>
+        )
+      }
     </p>
   </div>
 

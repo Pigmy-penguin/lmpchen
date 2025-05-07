@@ -1,15 +1,8 @@
 ---
 import PostGrid from "../components/PostGrid.astro";
-import { getCollection } from "astro:content";
+import getAllPosts from "../utils/getAllPosts";
 
-// Import the collections
-const articles = await getCollection("articles");
-const notes = await getCollection("notes");
-const translations = await getCollection("translations");
-
-const allPosts = [...articles, ...notes, ...translations].sort(
-  (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
-);
+const allPosts = await getAllPosts();
 ---
 
 <PostGrid posts={allPosts} />

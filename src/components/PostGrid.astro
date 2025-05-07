@@ -5,12 +5,20 @@ import type { PostType } from "../../types";
 
 interface Props {
   posts: Array<PostType>;
+  tag?: string;
 }
-const { posts } = Astro.props;
+const { posts, tag } = Astro.props;
 ---
 
 <Layout>
   <section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
-    {posts.map((post) => <Thumbnail post={post} />)}
+    {
+      posts.map((post) => (
+        <Thumbnail
+          post={post}
+          tag={tag || ""}
+        />
+      ))
+    }
   </section>
 </Layout>

@@ -1,15 +1,10 @@
 import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
-import { getCollection } from "astro:content";
+import getAllPosts from "../utils/getAllPosts";
 
 export async function GET(context: APIContext) {
-  const articles = await getCollection("articles");
-  const notes = await getCollection("notes");
-  const translations = await getCollection("translations");
+  const allPosts = await getAllPosts();
 
-  const allPosts = [...articles, ...notes, ...translations].sort(
-    (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
-  );
   return rss({
     title: "Lämpchen",
     description:
