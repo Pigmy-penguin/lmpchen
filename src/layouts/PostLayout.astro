@@ -4,7 +4,9 @@ import Layout from "./Layout.astro";
 
 <Layout>
   <main class="flex flex-col gap-8 px-4 pb-8 md:pt-8">
-    <section class="mx-auto prose max-w-full md:max-w-[70ch] prose-emerald">
+    <section
+      class="mx-auto prose max-w-full md:max-w-[70ch] prose-emerald prose-a:hover:opacity-70 prose-a:transition-opacity prose-a:underline-offset-2"
+    >
       <slot />
     </section>
   </main>
