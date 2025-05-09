@@ -1,0 +1,72 @@
+---
+// https://cosmicthemes.com/blog/astro-table-of-contents-component/
+
+interface Heading {
+  depth: number; // The heading level (h1 = 1, h2 = 2, etc)
+  slug: string; // The ID of the heading for linking
+  text: string; // The text content of the heading
+}
+
+interface Props {
+  headings: Heading[]; // Array of headings from your markdown content
+  levels?: 1 | 2 | 3; // How many levels of headers to show in TOC (default: 2)
+}
+
+const { headings, levels = 2 } = Astro.props as Props;
+
+if (!headings || headings.length === 0) return null;
+
+// Filter headings to only show up to the specified level
+const filteredHeadings = headings.filter((heading) => heading.depth <= levels);
+---
+
+<div
+  class="max-lg:hidden sticky top-25 left-0 text-sm prose [&_.accent]:text-accent self-start"
+>
+  <ul class="flex flex-col list-none !my-0">
+    {
+      filteredHeadings.map((heading) => (
+        <li
+          class:list={{
+            "!font-bold": heading.depth === 1,
+            "pl-4": heading.depth === 2,
+            "pl-8": heading.depth === 3
+          }}
+        >
+          <a
+            href={`#${heading.slug}`}
+            class="toc-link no-underline text-primary hover:opacity-70 transition-opacity text-wrap"
+          >
+            {heading.text}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<!-- https://kld.dev/toc-animation/#marking-active-links -->
+<script>
+  function addIntersectionObserver() {
+    const observer = new IntersectionObserver((sections) => {
+      sections.forEach((section) => {
+        const heading = section.target.querySelector("h1, h2, h3");
+        if (!heading) return;
+        const id = heading.getAttribute("id");
+
+        // Get the link to this section's heading
+        const link = document.querySelector(`a[href="#${id}"].toc-link`);
+
+        // Toggle the active class based on section visibility
+        const addRemove = section.intersectionRatio > 0 ? "add" : "remove";
+        link?.classList[addRemove]("accent");
+      });
+    });
+
+    document.querySelectorAll("#content section").forEach((section) => {
+      observer.observe(section);
+    });
+  }
+
+  addIntersectionObserver();
+</script>

@@ -4,6 +4,7 @@ import { siteConfig } from "./site.config";
 
 import tailwindcss from "@tailwindcss/vite";
 import rehypeExternalLinks from "rehype-external-links";
+import sectionize from "remark-sectionize";
 
 // https://astro.build/config
 export default defineConfig({
@@ -32,6 +33,7 @@ export default defineConfig({
           target: "_blank"
         }
       ]
-    ]
+    ],
+    remarkPlugins: [sectionize]
   }
 });

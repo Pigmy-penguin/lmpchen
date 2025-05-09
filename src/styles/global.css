@@ -8,6 +8,7 @@
 
   --color-primary: #000000;
   --color-secondary: #eaeae7;
+  --color-accent: var(--color-emerald-600);
 }
 
 @layer base {
