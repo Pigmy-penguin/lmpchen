@@ -5,19 +5,24 @@ import Layout from "./Layout.astro";
 
 interface Props {
   headings: MarkdownHeading[];
+  displayToc?: boolean;
 }
 
-const { headings } = Astro.props;
+const { headings, displayToc = false } = Astro.props;
 ---
 
 <Layout>
   <main
     class="flex flex-col gap-8 px-3 md:px-4 pb-8 md:pt-8 md:grid lg:grid-cols-[1fr_3fr_1fr]"
   >
-    <TableOfContents
-      headings={headings}
-      levels={2}
-    />
+    {
+      displayToc && (
+        <TableOfContents
+          headings={headings}
+          levels={2}
+        />
+      )
+    }
     <article
       id="content"
       class="lg:col-start-2 mx-auto prose max-w-full md:max-w-[70ch] prose-a:hover:opacity-70 prose-a:transition-opacity prose-a:underline-offset-2 prose-headings:scroll-mt-24 [--tw-prose-links:var(--color-accent)]"

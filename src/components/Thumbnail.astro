@@ -51,26 +51,27 @@ if (post.data.image && !thumbnails[thumbnailPath])
   </div>
 
   <!-- Image & description -->
-  <div class="flex flex-row gap-2 items-start md:items-end">
-    {
-      post.data.image && (
-        <Image
-          src={thumbnails[thumbnailPath]()}
-          alt={post.data.title}
-          class="aspect-square w-18 md:w-32 mix-blend-lighten object-cover pt-0.5"
-        />
-      )
-    }
+  {
+    post.collection !== "notes" && (
+      <div class="flex flex-row gap-2 items-start md:items-end">
+        {post.data.image && (
+          <Image
+            src={thumbnails[thumbnailPath]()}
+            alt={post.data.title}
+            class="aspect-square w-18 md:w-32 mix-blend-lighten object-cover pt-0.5"
+          />
+        )}
 
-    <div class="relative">
-      <p class="text-balance leading-4.5 max-w-prose">
-        {post.data.description.slice(0, 300)}
-        {post.data.description.length > 300 ? "…" : ""}
-      </p>
-      <div
-        class="absolute inset-0 bg-gradient-to-tl from-[var(--item-color)]/70"
-      >
+        {post.data.description && (
+          <div class="relative">
+            <p class="text-balance leading-4.5 max-w-prose">
+              {post.data.description.slice(0, 300)}
+              {post.data.description.length > 300 ? "…" : ""}
+            </p>
+            <div class="absolute inset-0 bg-gradient-to-tl from-[var(--item-color)]/70" />
+          </div>
+        )}
       </div>
-    </div>
-  </div>
+    )
+  }
 </a>
