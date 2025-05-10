@@ -2,7 +2,6 @@
 title: "Plain Text 1"
 description: "Plain Text is a printed publication for exploratory type design, edited and designed by Lucas Descroix and Benjamin Dumond, and published by type foundry Plain Form in January 2025. From fiction to theory, from mystical analyses to visual works, Plain Text aims at exploring typographic imaginaries, moving beyond a strictly historical and technical framework, with a taste for the unknown and the dormant potential of writing. The first issue of Plain Text features voices from various backgrounds and generations, many offering a personal, even intimate or spiritual, approach to letters."
 published: "2025-01-15"
-color: "#7300F9"
 image: "plain-text.jpeg"
 tags:
   - Revue

@@ -3,6 +3,7 @@ import { defineCollection, z } from "astro:content";
 
 // 2. Import loader(s)
 import { glob } from "astro/loaders";
+import getRandomColor from "./utils/getRandomColor";
 
 // 3. Define your collection(s)
 const articles = defineCollection({
@@ -17,7 +18,16 @@ const articles = defineCollection({
     updated: z.coerce.date().optional(),
     tags: z.array(z.string()).optional(),
     image: z.string().optional(),
-    color: z.string().min(4).max(9).regex(/^#/).optional()
+    color: z
+      .string()
+      .min(4)
+      .max(9)
+      .regex(/^#/)
+      .optional()
+      .transform((color) => {
+        if (color) return color;
+        return getRandomColor();
+      })
   })
 });
 const translations = defineCollection({
@@ -32,7 +42,16 @@ const translations = defineCollection({
     updated: z.coerce.date().optional(),
     tags: z.array(z.string()).optional(),
     image: z.string().optional(),
-    color: z.string().min(4).max(9).regex(/^#/).optional()
+    color: z
+      .string()
+      .min(4)
+      .max(9)
+      .regex(/^#/)
+      .optional()
+      .transform((color) => {
+        if (color) return color;
+        return getRandomColor();
+      })
   })
 });
 const notes = defineCollection({
@@ -47,7 +66,16 @@ const notes = defineCollection({
     updated: z.coerce.date().optional(),
     tags: z.array(z.string()).optional(),
     image: z.string().optional(),
-    color: z.string().min(4).max(9).regex(/^#/).optional()
+    color: z
+      .string()
+      .min(4)
+      .max(9)
+      .regex(/^#/)
+      .optional()
+      .transform((color) => {
+        if (color) return color;
+        return getRandomColor();
+      })
   })
 });
 
