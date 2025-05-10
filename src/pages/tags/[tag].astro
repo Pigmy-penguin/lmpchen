@@ -4,7 +4,7 @@ import PostGrid from "../../components/PostGrid.astro";
 import getAllPosts from "../../utils/getAllPosts";
 
 export async function getStaticPaths() {
-  const allPosts = await getAllPosts();
+  const allPosts = await getAllPosts(true);
 
   const allPostsWithTags = allPosts.filter(
     (post: any) => post.data.tags?.length > 0
