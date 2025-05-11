@@ -9,7 +9,7 @@ Sur ce site, je publie des textes autour du marxisme, de la critique de l'écono
  
 ## Me suivre
 
-- Abonnez vous aux flux de mes [articles et traductions](/notes.xml), et à celui de [mes notes](/rss.xml).
+- Abonnez vous aux flux de mes [articles et traductions](/rss.xml), et à celui de [mes notes](/notes.xml).
 - Vous pouvez aussi me suivre sur Twitter : [@lmpchen](https://x.com/lmpchen)
 
 ## Colophon
