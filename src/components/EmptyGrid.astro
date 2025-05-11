@@ -1,7 +1,18 @@
+---
+interface Props {
+  is404?: boolean;
+}
+
+const { is404 = false } = Astro.props;
+---
+
 <section
   class="text-center grow flex flex-col items-center justify-center gap-2 px-3 md:px-4 pb-8 md:pt-8"
 >
-  <h1 class="text-2xl font-bold">Pas de contenu pour le moment</h1>
+  {is404 && <span class="font-display text-8xl -rotate-12">404</span>}
+  <h1 class="text-2xl font-bold">
+    {is404 ? "Page introuvable" : "Pas de contenu pour le moment"}
+  </h1>
   <p class="text-lg/tight max-w-prose text-balance">
     Abonnez-vous au <a
       href="/rss.xml"
