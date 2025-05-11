@@ -1,12 +1,12 @@
 ---
-import type { PostType } from "../../../types";
-import PostGrid from "../../components/PostGrid.astro";
-import getAllPosts from "../../utils/getAllPosts";
+import { getCollection } from "astro:content";
+import type { PostType } from "../../../../types";
+import PostGrid from "../../../components/PostGrid.astro";
 
 export async function getStaticPaths() {
-  const allPosts = await getAllPosts();
+  const notes = await getCollection("notes");
 
-  const allPostsWithTags = allPosts.filter(
+  const allPostsWithTags = notes.filter(
     (post: any) => post.data.tags?.length > 0
   );
 
@@ -15,7 +15,7 @@ export async function getStaticPaths() {
   ];
 
   return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter(
+    const filteredPosts = notes.filter(
       (post: any) => post.data.tags?.includes(tag) ?? false
     );
 

@@ -55,7 +55,8 @@ if (post.data.image && !thumbnails[thumbnailPath])
             {" | "}{" "}
             {post.data.tags
               .map((t) => {
-                const h = `/tags/${t}`;
+                const n = post.collection === "notes" ? "/notes" : "";
+                const h = `${n}/tags/${t}`;
                 return <a href={h}>{t}</a>;
               })
               .reduce((prev, curr) => [prev, ", ", curr])}
