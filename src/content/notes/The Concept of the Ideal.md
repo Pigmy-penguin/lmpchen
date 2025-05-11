@@ -47,3 +47,4 @@ La forme idéelle = la forme d’une chose créée par le travail humain social.
 Exemple étoiles.
 
 CCL° : idéel n'existe QUE dans le mouvement réciproque des deux métamorphoses opposées -> formes de l'activité et formes des choses.
+
