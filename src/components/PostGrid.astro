@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Thumbnail from "./Thumbnail.astro";
 import type { PostType } from "../../types";
+import EmptyGrid from "./emptyGrid.astro";
 
 interface Props {
   posts: Array<PostType>;
@@ -13,16 +14,20 @@ const hasNote = posts.some((post) => post.collection === "notes");
 ---
 
 <Layout>
-  <section
-    class={`grid grid-cols-1 ${!hasNote ? "md:grid-cols-2 2xl:grid-cols-3" : "divide-y divide-secondary"}`}
-  >
-    {
-      posts.map((post) => (
-        <Thumbnail
-          post={post}
-          tag={tag || ""}
-        />
-      ))
-    }
-  </section>
+  {
+    posts.length > 0 ? (
+      <section
+        class={`grid grid-cols-1 ${!hasNote ? "md:grid-cols-2 2xl:grid-cols-3" : "divide-y divide-secondary"}`}
+      >
+        {posts.map((post) => (
+          <Thumbnail
+            post={post}
+            tag={tag || ""}
+          />
+        ))}
+      </section>
+    ) : (
+      <EmptyGrid />
+    )
+  }
 </Layout>
