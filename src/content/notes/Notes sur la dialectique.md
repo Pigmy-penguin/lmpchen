@@ -21,7 +21,6 @@ Humanité/monde social =/= empire dans un autre empire MÊME si dialectique déc
 
 2) dialectique comme procès d'auto-réalisation de l'humanité (de son unité et de son autonomie). Ici =/= système, lois etc mais *thèmes* philosophiques qui sont ceux d'un finalisme : aliénation, négation, totalisation etc.
 
-------------------------------------------------------------------------------------------
 Philosophie (def) = expression conceptuelle *à peu près* cohérente et conséquente des différentes visions du monde qui se sont succédé au cours de l'histoire.
 Soit cercle conceptuel fermé soit sur le plan même du concept exprimer l'insuffisance de celui-ci, son autonomie relative (sagesse, extase mystique, grâce, action, etc...)
 

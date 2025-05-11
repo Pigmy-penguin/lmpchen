@@ -5,8 +5,6 @@ tags:
  - marxisme
  - philosophie
 ---
-
-# La philosophie de Staline - Tran Duc Thao
 > Staline -> mouvement de la pensée = réflexion du mouvement réel, transporté et transporté dans le cerveau de l'homme.
 
 Ne tire pas la conclusion : méthode de pensée reflète la dialectique objective.

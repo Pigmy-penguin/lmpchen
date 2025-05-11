@@ -5,15 +5,14 @@ tags:
  - marxisme
  - critique de l'économie politique
 ---
-# Première section : Production en général
-Prodution matérielle. Critique des points de départ de Smith et Ricardo -> individu pas point de départ mais résultat.
+## Première section : Production en général
+Production matérielle. Critique des points de départ de Smith et Ricardo -> individu pas point de départ mais résultat.
 
 Mouvement de pensée de l'Intro : prend points de départ de l'écopol, montre par la critique que ce sont des points d'arrivés = un dev historique est contenu en eux.
 CCL° : Ce qui apparait comme le plus concret, le plus sensé des points de départ : la somme de nombreuses déterminations préalables (pas prises en comptes donc abstrait).
 
 Méthode : dévoilement des relations essentielles derrière les inversions NÉCESSAIRES mais mystifiantes de leurs formes phénoménales.
 
----
 Critique des types d'abstraction classiques : isolement et analyse par l'abstraction des éléments qui demeurent communs à travers les époques et les types de formations sociales -> sorte d'essentialisme. 
 Hegel : même dans sa dialectique, retient la notion d'un "coeur essentiel" des concepts qui garantit le caractère harmonieux des rapports sociaux existants (État prussien etc).
 
@@ -37,8 +36,7 @@ Hegel -> dépassement d’une catégorie par une autre = « transcendance de l�
 
 DONC aucune histoire profane (transformée en histoire d’une abstraction). Le mouvement de la pensée reste donc ultimement enfermé dans son propre cercle.
 
-----------
-# Deuxième section : Production, distribution, échange et consommation
+## Deuxième section : Production, distribution, échange et consommation
 
 ## A/ prod et conso
 ### I/ Id immédiate
@@ -98,15 +96,12 @@ Présupposé de la distribution des salaires/rentes/profits : distribution des m
 1 - la division du travail
 2 - la production privée
 
--------------
 **Résumé** :
 Th1 : production, distribution, échange et consommation = membres d'une totalité, différences à l'intérieur d'une unité
 Th2 : production prend l'ascendant, aussi bien sur elle-même que sur les autres moments : à partir d'elle que recommence tout le processus
 Th3 : distribution en tant que distribution des agents de la prod = moment de la production
 CCL° : une production déterminée détermine donc une consommation, une distribution (des produits), et un échange déterminés ET *des rapports déterminés* entre ces différents moments.
 Th4 : CEPENDANT, la production, sous sa forme *unilatérale* est déterminée *de son côté* par les autres moments (ex extension du marché aka sphère de l'échange, production croit en volume). Interaction entre les différentes moments.
-
-----
 
 Donc catégorie spécifiquement marxienne émerge : **l'unité différenciée**. Liée au concept de concrétude (unité de multiples déterminations et relations).
 Donc comprendre à la fois dans un phénomène :

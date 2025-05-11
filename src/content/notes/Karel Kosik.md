@@ -5,9 +5,7 @@ tags:
  - marxisme
  - philosophie
 ---
-
-# Karel Kosik
-
+La dialectique de la totalité concrète n’est pas une méthode qui prétend avec ingénuité épuiser tous les aspects de la réalité et en donner une image « totale » ; c’est une théorie de la réalité et de sa connaissance en tant que réalité. La totalité concrète n’est pas une méthode pour savoir et décrire tous les aspects, caractères ou propriétés, rapports et procès de la réalité, mais une théorie de la réalité comme totalité concrète.
 # I/ Dialectique de la totalité concrète
 ## 1) Le monde du pseudo-concret et sa destruction
 def générale : pseudo-concret = monde tel qu’il se présente immédiatement, en tant que celui-ci est considéré par le sujet comme étant une manifestation des « choses mêmes » et de leur essence.
@@ -335,7 +333,7 @@ Position centrale de l'économie : car elle représente la sphère de la métamo
  
 Travail au sens économique = quand il produit une forme historiquement et socialement déterminée de richesse. Travail en général est la présupposition du travail au sens économique mais ne s'identifie pas à lui. Le travail productif de richesse de la société capitaliste n'est pas du travail en général, mais un travail bien déterminé, du travali abstrait-concret ou du travail de caractère double cette forme seule appartient à l'économie.
 
-# IV/ Praxis et totalité
+## IV/ Praxis et totalité
 Point de départ de toute philosophie est l'existence de l'homme dans le monde, le rapport de l'homme à l'univers. L'homme crée un mode déterminé d'existence dans le monde et définit (consciemment ou inconsciemment) sa position dans l'univers.
 Primauté à la théorie et à la contemplation (Aristote ou philo médiévale) ou à la praxis et à l'activité (Bacon, Descartes, science naturelle moderne).
 Part pas de forme historique déterminée des rapports pratiques avec la nature et les hommes MAIS réponse philosophique à la question philosophique : Qu'est-ce que l'homme, qu'est-ce que la réalitc'. sociale et humaine, et comment cette réalité est-elle créée ?

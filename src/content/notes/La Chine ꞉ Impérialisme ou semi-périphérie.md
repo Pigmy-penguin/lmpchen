@@ -59,14 +59,12 @@ La Chine a payé plus de revenus d’investissement qu’elle n’en a reçus en
 Déficit de revenu d’investissement 2024 = 131,9 milliards.
 
 Taux de rendement sur l'investissement (2010-2018)
-![](@attachment/Clipboard_2025-04-21-15-53-16.png)
+![](/Li_Chart_1._Rates_of_Return_on_Investment_2010-2018.png)
 
 2010-2018 -> taux de rendement sur les actifs chinois à l'étranger = 3% en moyennne.
 Actifs étrangers en Chine = 5 à 6%.
 
 **CCL°** 3% =/= surprofits.
-
----
 
 Comparaison : avant 1GM GB, revenu de propriété net de l'étranger = 8,6% du PIB, et revenu de propriété total 9,6%.
 
@@ -90,7 +88,7 @@ Dès l'ère postcoloniale : exploitation prend la forme d'un échange inégal.
 
 Average Labor Terms of Trade (1990-2017)
 Average labor terms of trade is calculated as the ratio between total labor embodied in an average pool of one million dollars of imported goods and services and the total labor embodied in an average pool of one million dollars of exported goods and services.
-![](Li_Chart_1._Rates_of_Return_on_Investment_2010-2018.png)
+![](/Li_Chart_2._Average_Labor_Terms_of_Trade_1990-2017.png)
 
 US -> 90's, une unité de T US pouvait être échangée pour 4 unités de T étranger.
 2000's -> une unité de T US contre 5 unités de T étranger.
@@ -102,6 +100,6 @@ CCL° : diminution du degré d'exploitation.
 
 Net Labor Transfer (Million Worker-Years, 1990-2017)
 Net labor transfer is defined as the difference between the total labor embodied in a country’s imported goods and services and the total labor embodied in the country’s exported goods and services. If the difference is positive, it constitutes a net labor gain; if negative, it constitutes a net labor loss.
-![](Li_Chart_2._Average_Labor_Terms_of_Trade_1990-2017.png)
+![](/Li_Chart_3._Net_Labor_Transfer_Million_Worker-Years_1990-2017.png)
 
 Si l'on additionne la population de l'Asie du Sud, de l'Afrique subsaharienne et de l'Asie de l'Est à revenu faible ou moyen (à l'exclusion de la Chine), la population totale représente environ 45 % de la population mondiale. La Chine a donc établi des relations d'exploitation avec près de la moitié de la population mondiale. La Chine ne peut plus être traitée comme un simple pays périphérique dans le système capitaliste mondial.

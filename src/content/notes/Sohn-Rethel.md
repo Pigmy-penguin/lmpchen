@@ -6,9 +6,6 @@ tags:
  - critique de l'économie politique
  - philosophie
 ---
-
-# Sohn-Rethel
-
 Le travail manuel, privé de sa puissance mentale, ne peut plus effectuer la cohésion des différents travaux, et celle de la société en général, il faut assurer le lien social a posteriori par l'échange et par l'activité intellectuelle - par l'abstraction donc. C'est l'intellect séparé, fruit de la séparation entre travail manuel et travail intellectuel , qui doit alors opérer la « synthèse sociale »
 
 Question : où se trouve l'origine de l'abstraction ? 

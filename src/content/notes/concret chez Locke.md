@@ -1,0 +1,37 @@
+---
+title: "Distinction abstrait/concret chez Locke et Mill"
+published: "2025-05-06"
+tags:
+ - philosophie
+---
+
+## Distinction abstrait/concret chez Locke
+
+John Locke conçoit l’**abstraction** comme un processus mental indispensable pour former des idées générales. En effet, si chaque mot désignait un objet particulier, « le nombre de mots serait infini ». Par conséquent, « l’esprit rend générales les idées particulières qu’il a reçues \[…] c’est ce qu’on appelle abstraction, par où des idées tirées de quelque être particulier devenant générales, représentent tous les êtres de cette espèce ». Autrement dit, pour Locke toute idée abstraite est dérivée d’un ou plusieurs exemplaires particuliers en supprimant les propriétés accidentelles : ainsi le mot « homme » est associé à une idée complexe d’homme sans la particularité qui distingue un homme précis, et le mot « blancheur » (blancheur/whiteness) à la simple qualité blanche. Locke distingue deux cas d’abstraction : d’une part, l’**idée simple abstraite** (ex. « étendue », « figure » – Livre II) ; d’autre part, l’**idée composée abstraite** (ex. « homme » résultant de l’abolition des « idées simples » individuelles – Livre III). Dans tous les cas, les idées générales jouent pour Locke le même rôle que les universaux et essences chez les scolastiques antérieurs.
+
+## Les noms abstraits et concrets selon Mill
+
+John Stuart Mill, dans son *System of Logic* (1843), reprend et précise la terminologie scolastique des **termes concrets** et **abstraits**. Il définit le terme concret comme « un nom qui désigne une chose » et le terme abstrait comme « un nom qui désigne l’attribut d’une chose ». Par exemple, « blanc » (white) est un nom concret – il désigne les choses qui sont blanches – tandis que « blancheur » (whiteness) est un nom abstrait – il désigne la qualité blanche possédée par ces choses. Mill souligne qu’il adopte délibérément le sens « annexé par les scholastiques » à ces mots : selon l’usage traditionnel, un nom abstrait désigne une **qualité commune**, et un nom concret désigne un **objet particulier**.
+
+Mill distingue encore les noms **généraux** (pouvant se dire indéfiniment de plusieurs choses) et **singuliers** (désignant un seul objet). Les noms concrets généraux, comme « homme », s’appliquent à plusieurs individus parce qu’ils partagent une qualité (ici, l’humanité). Les noms abstraits peuvent être généraux ou singuliers. Par exemple, « couleur » est un nom abstrait général (il englobe blancheur, rougeur…), tandis que « blancheur » pur, sans variation, est « parfois considéré comme ni général ni particulier ». Mais pour Mill tous les noms qui, par leur signification, renseignent sur un attribut, ont en propre un nom abstrait correspondant, conforme à la définition scolastique.
+
+## Critique millienne de Locke
+
+Mill reproche à Locke son usage élargi du terme « abstraction ». Selon lui, Locke (suivi par les empiristes français de Condillac) a abusé du mot **« abstract »** pour désigner tous les noms généraux issus d’une abstraction mentale. Mill écrit : « by abstract, then, I shall always, in Logic proper, mean the opposite of concrete; by an abstract name, the name of an attribute; by a concrete name, the name of an object ». Autrement dit, Mill corrige Locke : un « nom abstrait » doit être limité aux noms de qualité (les « attributs »), et non étendu à tout nom général. Par exemple, alors que Locke envisageait l’« abstraction » comme processus mental formant l’idée générale d’« homme », Mill rappellera que l’idée de « rationalité » (qualité de l’homme) est nommée par « humanité », et que c’est cette « humanité » qui est l’attribut abstrait commun à tous les hommes, distinct du mot « homme ».
+
+Mill adopte en fait le vocabulaire scolastique : il approuve que les « mots concrets et abstraits soient utilisés comme les scolastiques le faisaient ». Il condamne l’« altération du sens du mot ‘abstract’ introduite par Locke » comme un « abus de langage » qui complique la logique. En pratique, Mill maintient que tous les noms, lorsqu’ils « donnent à un individu quelque information à son sujet », impliquent un attribut (une qualité), mais qu’il faut distinguer le nom concret (le sujet) de son nom abstrait correspondant (l’attribut). Cette clarification permet d’éviter les confusions logiques (par ex., on ne dit pas « l’humanité est l’humanité » mais « l’humanité est présente dans Socrate ») et soude ses règles d’inférence.
+
+## Écho médiéval et nominalisme
+
+La critique de Locke par Mill, et son insistance sur la distinction abstrait/concret « scolastique », font écho à des débats médiévaux sur les universaux. Thomas d’Aquin (scolastique réaliste/modéré) enseignait que l’intellect abstrait la forme universelle d’un objet, produisant un concept objectif; mais il reconnaissait aussi que l’universel n’existe pas en tant qu’entité séparée. Au contraire, les nominalistes comme Guillaume d’Ockham soutenaient que « l’usage d’un mot général (par ex. « humanité ») ne suppose pas l’existence d’une chose générale qui porte ce nom ». Selon eux, ce à quoi se réfère « humanité » n’est pas une substance universelle, mais simplement la collection des hommes individuels.
+
+Mill rejoint clairement cette tradition nominaliste : pour lui, il n’y a pas de « substance universelle » derrière « homme » ou « blanc ». Comme le notent les spécialistes, le nominalisme « nie l’existence de concepts abstraits et universels, et \[considère] que ce qu’on appelle idées générales ne sont que des noms, de simples désignations verbales ». Cette position est exactement celle de Mill dans sa « théorie de l’extension » : un nom général s’applique à un ensemble d’individus partageant un attribut, mais aucun universel ne subsiste en dehors du langage.
+
+Ainsi, en corrigeant Locke, Mill « retourne » en quelque sorte à un schéma scolastique classique : il use volontiers de la terminologie médiévale (nom abstrait de l’attribut, concret de l’objet), et il adopte de fait le point de vue nominaliste de Guillaume d’Ockham, selon lequel seuls les individus existent réellement et les universaux ne sont que des noms communes. L’effort de Locke pour dégager un rôle propre aux « idées abstraites » est rejeté par Mill comme superflu : la science progresse en manipulant abstraitement des attributs (comme la blancheur, la causalité, etc.), mais toujours sous l’égide de noms concrets qui référent à des individus.
+
+## Conclusion
+
+Pour John Stuart Mill, la vraie distinction entre l’abstrait et le concret relève des noms (et des attributs qu’ils désignent), non pas d’idées mentales séparées. Il reproche à Locke d’avoir étendu abusivement le concept de « nom abstrait » à tous les noms généraux et de laisser croire à l’existence d’idées générales effectives. En revenant au sens « scolastique » d’**abstrait = attribut**, Mill se réclame de la tradition médiévale (notamment nominaliste) des universaux : le général ne subsiste pas comme entité en soi, mais il se manifeste comme attribut commun aux individus. Cette approche, quoique formellement empiriste, s’aligne sur la position nominaliste de la scolastique, qui voit dans les « universaux » des produits du langage et de la pensée, et non des réalités transcendantes.
+
+**Sources :** John Locke, *Essay concerning Human Understanding* (idées abstraites et noms généraux) ; John Stuart Mill, *A System of Logic* (Livre I, ch. III–IV) ; références historiques sur le réalisme et nominalisme médiévaux.
+
