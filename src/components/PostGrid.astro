@@ -8,10 +8,14 @@ interface Props {
   tag?: string;
 }
 const { posts, tag } = Astro.props;
+
+const hasNote = posts.some((post) => post.collection === "notes");
 ---
 
 <Layout>
-  <section class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
+  <section
+    class={`grid grid-cols-1 ${!hasNote ? "md:grid-cols-2 2xl:grid-cols-3" : "divide-y divide-secondary"}`}
+  >
     {
       posts.map((post) => (
         <Thumbnail
