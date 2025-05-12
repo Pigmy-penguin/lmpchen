@@ -5,6 +5,9 @@ import "../styles/global.css";
 import "@fontsource/spectral";
 import "@fontsource/spectral-sc";
 import "@fontsource/freckle-face";
+import OpenGraph from "../components/OpenGraph.astro";
+
+const { ...seo } = Astro.props;
 ---
 
 <!doctype html>
@@ -34,6 +37,11 @@ import "@fontsource/freckle-face";
       href={new URL("rss.xml", Astro.site)}
     />
     <title>{siteConfig.title}</title>
+    <meta
+      name="description"
+      content={siteConfig.description}
+    />
+    <OpenGraph {...seo} />
   </head>
 
   <body

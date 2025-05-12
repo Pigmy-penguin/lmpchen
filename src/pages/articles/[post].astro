@@ -19,6 +19,10 @@ const { Content, headings } = await render(post);
 <PostLayout
   headings={headings}
   displayToc={true}
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  image={post.data.image}
 >
   <PostTitle post={post} />
   <Content />

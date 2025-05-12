@@ -5,4 +5,7 @@ import PostGrid from "../../components/PostGrid.astro";
 const articles = await getCollection("articles");
 ---
 
-<PostGrid posts={articles} />
+<PostGrid
+  posts={articles}
+  title="Articles"
+/>

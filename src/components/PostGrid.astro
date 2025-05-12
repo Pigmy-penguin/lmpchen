@@ -7,13 +7,15 @@ import EmptyGrid from "./EmptyGrid.astro";
 interface Props {
   posts: Array<PostType>;
   tag?: string;
+  title?: string;
 }
-const { posts, tag } = Astro.props;
+const { posts, tag, title } = Astro.props;
 
 const hasNote = posts.some((post) => post.collection === "notes");
+const pageTitle = tag ? `Publications taggées "${tag}"` : title;
 ---
 
-<Layout>
+<Layout title={pageTitle}>
   {
     posts.length > 0 ? (
       <section

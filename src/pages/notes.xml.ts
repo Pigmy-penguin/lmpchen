@@ -1,14 +1,14 @@
 import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
+import { siteConfig } from "../../site.config";
 
 export async function GET(context: APIContext) {
   const notes = await getCollection("notes");
 
   return rss({
-    title: "Lämpchen, notes",
-    description:
-      "Je publie des textes autour du marxisme, de la critique de l'économie politique, de l'épistémologie — et d'autres choses encore, selon les détours que prend la pensée.",
+    title: siteConfig.title + ", notes",
+    description: siteConfig.description,
 
     // Pull in your project "site" from the endpoint context
     // https://docs.astro.build/en/reference/api-reference/#site

@@ -5,4 +5,7 @@ import PostGrid from "../../components/PostGrid.astro";
 const translations = await getCollection("translations");
 ---
 
-<PostGrid posts={translations} />
+<PostGrid
+  posts={translations}
+  title="Traductions"
+/>

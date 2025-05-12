@@ -5,4 +5,7 @@ import PostGrid from "../../components/PostGrid.astro";
 const notes = await getCollection("notes");
 ---
 
-<PostGrid posts={notes} />
+<PostGrid
+  posts={notes}
+  title="Notes de lecture"
+/>

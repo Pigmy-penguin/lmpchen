@@ -1,0 +1,78 @@
+---
+import { siteConfig } from "../../site.config";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  type?: string;
+  image?: string;
+}
+
+const { title, description, type, image } = Astro.props;
+
+const seoTitle = `${siteConfig.title}${title ? ` | ${title}` : ""}`;
+const seoDescription = description || siteConfig.description;
+const seoImage = image;
+---
+
+<!-- Open Graph tags -->
+<meta
+  property="og:title"
+  content={seoTitle}
+/>
+<meta
+  property="og:type"
+  content={type || "website"}
+/>
+{
+  type === "article" && (
+    <meta
+      property="article:author"
+      content={siteConfig.author}
+    />
+  )
+}
+<meta
+  property="og:url"
+  content={siteConfig.url}
+/>
+<meta
+  property="og:description"
+  content={seoDescription}
+/>
+<meta
+  property="og:image"
+  content=""
+/>
+<meta
+  property="og:image:alt"
+  content={title}
+/>
+
+<!-- Twitter tags -->
+
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+/>
+
+<meta
+  name="twitter:site"
+  content={siteConfig.twitterHandle}
+/>
+<meta
+  name="twitter:title"
+  content={seoTitle}
+/>
+<meta
+  name="twitter:description"
+  content={seoDescription}
+/>
+<meta
+  name="twitter:image"
+  content=""
+/>
+<meta
+  name="twitter:image:alt"
+  content={title}
+/>

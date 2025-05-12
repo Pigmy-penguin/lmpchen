@@ -2,16 +2,17 @@
 import type { MarkdownHeading } from "astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import Layout from "./Layout.astro";
+import type { Props as SeoProps } from "../components/OpenGraph.astro";
 
-interface Props {
+interface Props extends SeoProps {
   headings: MarkdownHeading[];
   displayToc?: boolean;
 }
 
-const { headings, displayToc = false } = Astro.props;
+const { headings, displayToc = false, ...seo } = Astro.props;
 ---
 
-<Layout>
+<Layout {...seo}>
   <main
     class="flex flex-col gap-8 px-3 md:px-4 pb-8 md:pt-8 md:grid lg:grid-cols-[1fr_3fr_1fr]"
   >

@@ -28,7 +28,7 @@ const filteredHeadings = headings.filter((heading) => heading.depth <= levels);
       filteredHeadings.map((heading) => (
         <li
           class:list={{
-            "!font-bold": heading.depth === 1,
+            "pl-0": heading.depth === 1,
             "pl-4": heading.depth === 2,
             "pl-8": heading.depth === 3
           }}
