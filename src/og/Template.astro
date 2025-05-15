@@ -44,14 +44,14 @@ const subtitle = date + (tags.length > 0 ? ` | ${tagList}` : "");
   <div class="flex flex-col absolute top-0 left-0 w-full h-full justify-end">
     <div
       set:html={title}
-      class="text-4rem font-bold leading-[1.125] w-full px-10 py-6 border-b-2 border-[#eaeae7]"
+      class="text-5rem font-bold leading-[1.125] w-full px-10 py-6 border-b-2 border-[#eaeae7]"
       style={{ whiteSpace: "pre-wrap", textWrap: "balance" }}
     />
     <div
       set:html={subtitle}
-      class={`text-2rem leading-[1.125] w-full px-10 py-4 ${twitter && "border-b-2"} border-[#eaeae7]`}
+      class={`text-2.5rem leading-[1.125] w-full px-10 py-4 ${twitter && "border-b-2"} border-[#eaeae7]`}
       style={{ whiteSpace: "pre-wrap", textWrap: "balance" }}
     />
-    {twitter && <div class="flex py-14 w-full" />}
+    {twitter && <div class="flex py-17 w-full" />}
   </div>
 </div>
