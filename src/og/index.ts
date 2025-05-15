@@ -9,7 +9,7 @@ import type { CollectionEntry } from "astro:content";
 
 const _DIRNAME = import.meta.env?.PROD
   ? // Please ensure __dirname. Astro __dirname in dist folder on PROD (astro build) time 🫠
-    resolve(dirname(fileURLToPath(import.meta.url)), "../../../src/og")
+    resolve(dirname(fileURLToPath(import.meta.url)), "../../src/og")
   : dirname(fileURLToPath(import.meta.url));
 
 export async function getPostImageBuffer(
