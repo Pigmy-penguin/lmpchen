@@ -8,6 +8,12 @@ import "@fontsource/freckle-face";
 import OpenGraph from "../components/OpenGraph.astro";
 
 const { ...seo } = Astro.props;
+const pathname = (
+  Astro.url.pathname.endsWith("/")
+    ? Astro.url.pathname.slice(0, -1)
+    : Astro.url.pathname
+).replace(/\/[^/]+\/([^/]+)$/, "/$1");
+const ogUrl = `${siteConfig.url}/og${pathname}.png`;
 ---
 
 <!doctype html>
@@ -41,7 +47,10 @@ const { ...seo } = Astro.props;
       name="description"
       content={siteConfig.description}
     />
-    <OpenGraph {...seo} />
+    <OpenGraph
+      {...seo}
+      seoImage={ogUrl}
+    />
   </head>
 
   <body

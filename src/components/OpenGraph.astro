@@ -6,13 +6,13 @@ export interface Props {
   description?: string;
   type?: string;
   image?: string;
+  seoImage?: string;
 }
 
-const { title, description, type, image } = Astro.props;
+const { title, description, type, seoImage } = Astro.props;
 
 const seoTitle = `${siteConfig.title}${title ? ` | ${title}` : ""}`;
 const seoDescription = description || siteConfig.description;
-const seoImage = image;
 ---
 
 <!-- Open Graph tags -->
@@ -42,7 +42,7 @@ const seoImage = image;
 />
 <meta
   property="og:image"
-  content=""
+  content={seoImage}
 />
 <meta
   property="og:image:alt"
@@ -70,7 +70,7 @@ const seoImage = image;
 />
 <meta
   name="twitter:image"
-  content=""
+  content={seoImage}
 />
 <meta
   name="twitter:image:alt"
