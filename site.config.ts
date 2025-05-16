@@ -1,6 +1,6 @@
 export const siteConfig = {
   url: import.meta.env.PROD
-    ? "https://lmpchen.vercel.app"
+    ? "https://lmpchen-sage.vercel.app"
     : "http://localhost:4321",
   title: "Lämpchen",
   description:
