@@ -7,6 +7,7 @@ export type PostType = {
     color?: string;
     image?: string;
     tags?: string[];
+    imageUrl?: string;
   };
   collection: string;
 };
