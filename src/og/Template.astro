@@ -1,8 +1,9 @@
 ---
-const { title, site, color, imageUrl, published, tags, twitter } = Astro.props;
+const { title, site, imageUrl, published, tags, twitter, formattedColor } =
+  Astro.props;
 
-const gradient = color
-  ? `linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, ${color} 100%)`
+const gradient = formattedColor
+  ? `linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, ${formattedColor} 100%)`
   : "linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%)";
 
 const date = published.toLocaleDateString("fr-FR", {
@@ -10,8 +11,8 @@ const date = published.toLocaleDateString("fr-FR", {
   month: "2-digit",
   day: "2-digit"
 });
-const tagList = tags.map((tag: string) => tag).join(", ");
-const subtitle = date + (tags.length > 0 ? ` | ${tagList}` : "");
+const tagList = tags ? tags.map((tag: string) => tag).join(", ") : "";
+const subtitle = date + (tags && tags.length > 0 ? ` | ${tagList}` : "");
 ---
 
 <div
