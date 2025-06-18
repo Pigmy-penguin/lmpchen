@@ -21,12 +21,18 @@ const pageTitle = tag ? `Publications taggées "${tag}"` : title;
       <section
         class={`grid grid-cols-1 ${!hasNote ? "md:grid-cols-2 2xl:grid-cols-3" : "divide-y divide-secondary dark:divide-primary"}`}
       >
-        {posts.map((post) => (
-          <Thumbnail
-            post={post}
-            tag={tag || ""}
-          />
-        ))}
+        {posts
+          .sort(
+            (a, b) =>
+              new Date(b.data.published).getTime() -
+              new Date(a.data.published).getTime()
+          )
+          .map((post) => (
+            <Thumbnail
+              post={post}
+              tag={tag || ""}
+            />
+          ))}
       </section>
     ) : (
       <EmptyGrid />
