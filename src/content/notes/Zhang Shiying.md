@@ -5,6 +5,7 @@ published: "2025-04-16"
 color: "#779ECB"
 tags:
  - marxisme
+ - philosophie
 ---
 ## Hegel en France
 Séminaire de Kojève sur Hegel dans les 30's. 

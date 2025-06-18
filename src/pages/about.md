@@ -5,7 +5,7 @@ title: À propos
 
 # À propos
 
-Sur ce site, je publie des textes autour du marxisme, de la critique de l'économie politique, de l'épistémologie — et d'autres choses encore, selon les détours que prend la pensée. Il ne s'agit pas de produire du contenu, mais de tracer des lignes, parfois incertaines, entre lecture, théorie et expérience.
+Sur ce site, je publie des textes autour du marxisme, de la critique de l'économie politique, de l'épistémologie — et d'autres choses encore, selon les détours que prend la pensée. Ces textes n’ont pas vocation à convaincre ou à représenter un courant particulier de manière orthodoxe : ils expriment une position située, qui n’engage que moi. Ils ne prétendent ni à l’exhaustivité ni à l’autorité. Mon intention est avant tout de contribuer, modestement, à des débats théoriques et politiques, en assumant le caractère partiel - et partial -, de tout regard.
  
 ## Me suivre
 

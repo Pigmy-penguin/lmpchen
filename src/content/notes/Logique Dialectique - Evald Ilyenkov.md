@@ -6,6 +6,7 @@ color: "#A785A3"
 tags:
 - marxisme
 - Ilyenkov
+- philosophie
 ---
 Tâche laissée par Léniné : une exposition systématique de la dialectique comprise comme la logique et la théorie de la connaissance du matérialisme moderne.
 
