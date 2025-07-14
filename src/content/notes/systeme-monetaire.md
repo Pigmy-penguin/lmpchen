@@ -66,7 +66,7 @@ SMI repose sur : un **actif** reconnu au nv international ->
 3) réserve de valeur
 Contradiction : double rôle de la devise du SMI, domestique (conditions de financement de l'économie nationale) et international (garantir la liquidité nécessaire aux transactions internationales). Dilemme de Triffin.
 
-![](@attachment/Clipboard_2025-06-12-13-11-52.png)
+![](../assets/Clipboard_2025-06-12-13-11-52.png)
 Aucun pays ne peut bénéficier à la fois :
 1) d'unt taux de change fixe aavec les autres devises
 2) d'une mobilité parfaite des capitaux (absence de contrainte sur les entrées et sorties)
