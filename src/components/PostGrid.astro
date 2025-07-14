@@ -19,7 +19,7 @@ const pageTitle = tag ? `Publications taggées "${tag}"` : title;
   {
     posts.length > 0 ? (
       <section
-        class={`grid grid-cols-1 ${!hasNote ? "md:grid-cols-2 2xl:grid-cols-3" : "divide-y divide-secondary"}`}
+        class={`grid grid-cols-1 ${!hasNote ? "md:grid-cols-2 2xl:grid-cols-3" : "divide-y divide-secondary dark:divide-primary"}`}
       >
         {posts
           .sort(

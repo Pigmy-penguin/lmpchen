@@ -20,7 +20,7 @@ if (post.data.image && !thumbnails[thumbnailPath])
 
 <a
   href={`/${post.collection}/${post.id}`}
-  class="flex flex-col gap-14 p-3 md:p-4 text-secondary bg-[var(--item-color)] justify-between relative"
+  class="flex flex-col gap-14 p-3 md:p-4 text-secondary bg-(--item-color) dark:bg-(--item-color)/65 justify-between relative"
   style={`--item-color: ${post.data.color || "#000"};`}
   aria-label={post.data.title}
 >
