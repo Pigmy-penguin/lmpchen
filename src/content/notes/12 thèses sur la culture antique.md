@@ -1,6 +1,6 @@
 ---
 title: "12 thèses sur la culture antique - Aleksei Losev"
-published: "2025-14-07"
+published: "2025-07-14"
 tags:
  - histoire
  - philosophie

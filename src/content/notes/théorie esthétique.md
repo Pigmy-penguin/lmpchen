@@ -1,6 +1,6 @@
 ---
 title: "Esquisse d'une théorie esthétique générale"
-published: "2025-14-07"
+published: "2025-07-14"
 tags:
  - philosophie
  - marxisme

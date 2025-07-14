@@ -1,6 +1,6 @@
 ---
-title: "dialectique de l'idéel"
-published: "2025-14-07"
+title: "Dialectique de l'idéel"
+published: "2025-07-14"
 tags:
  - philosophie
  - marxisme

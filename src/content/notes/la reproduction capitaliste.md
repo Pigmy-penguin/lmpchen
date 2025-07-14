@@ -1,6 +1,6 @@
 ---
 title: "La reproduction capitaliste chez Marx"
-published: "2025-14-07"
+published: "2025-07-14"
 tags:
  - marxisme
  - critique de l'économie politique

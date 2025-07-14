@@ -1,6 +1,6 @@
 ---
 title: "La dialectique de l'abstrait et du concret dans le Capital de Marx"
-published: "2025-14-07"
+published: "2025-07-14"
 tags:
  - philosophie
  - marxisme
